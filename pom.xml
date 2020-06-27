@@ -160,8 +160,6 @@
        -->
 
 
-
-
         <!--servlet-->
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -271,13 +269,26 @@
                     <!--<version>3.4.6</version>-->
                     <!--</dependency>-->
 
-                    <dependency>
+<!--                    <dependency>
                         <groupId>com.chrm</groupId>
                         <artifactId>mybatis-generator-lombok-plugin</artifactId>
                         <version>1.0-SNAPSHOT</version>
-                    </dependency>
+                    </dependency>-->
+
                 </dependencies>
             </plugin>
+            <!--tomcat7-->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <path>/trip</path>
+                    <port>8080</port>
+                    <uriEncoding>UTF-8</uriEncoding>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 </project>

@@ -1,4 +1,9 @@
 
+create database trip;
+
+
+
+
  CREATE TABLE `login` (
   `id` bigint(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增主键',
   `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
@@ -11,6 +16,9 @@
   `login_ts` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '登录的UNIX时间戳',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户登录表';
+
+
+
 
 
 
