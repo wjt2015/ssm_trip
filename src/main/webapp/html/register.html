@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+<div id="header"></div>
+<div class=""rg_layout>
+
+    <div class="rg_form clearfix">
+        <div class="rg_form_left">
+            <p>新用户注册 </p>
+            <p>user register </p>
+        </div>
+        <div class="rg_form_center">
+            <!--注册表单-->
+            <form id="registerForm" action="registerUsr.json" >
+                <!--提交处理请求的标识符-->
+                <input type="hidden" name="action" value="register" >
+                <table style="align-content: center">
+                    <tr>
+                        <td class="td_left">
+                            <label for="username">用户名</label>
+                        </td>
+                        <td class="td_right">
+                            <input type="text" id="username" name="username" placeholder="请输入账号" >
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_left">
+                            <label for="password">密码</label>
+                        </td>
+                        <td class="td_right">
+                            <input type="text" id="password" name="password" placeholder="请输入密码" >
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_left">
+                            <label for="email">Email</label>
+                        </td>
+                        <td class="td_right">
+                            <input type="text" id="email" name="email" placeholder="请输入email" >
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_left">
+                            <label for="name">name</label>
+                        </td>
+                        <td class="td_right">
+                            <input type="text" id="name" name="name" placeholder="请输入name" >
+                        </td>
+                    </tr>
+
+
+
+
+                </table>
+
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
